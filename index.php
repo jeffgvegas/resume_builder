@@ -100,8 +100,7 @@ border: 10px solid grey;
 }
 
 				</style>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-      
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
         <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700i,900i&display=swap" rel="stylesheet">
     </head>
@@ -117,33 +116,43 @@ border: 10px solid grey;
         <label for="last">Last Name:</label><br/>
             <input type="text" id="last" name="last">
             </div>
+						<div>
             <label for="dob">Date of Birth:</label><br/>
             <input type="date" id="dob" name="dob">
             </div>
+						<div>
+						<label for="url">Github URL</label><br/>
+            <input type="url" id="url" name="url">
+            </div>
             <div class="container">
-        <label for="email">Email:</label><br/>
+            <label for="email">Email:</label><br/>
             <input type="email" id="email" name="email">
             </div>
             <div class="container">
             <label for="phone">Contact Number:</label><br/>
             <input type="tel" id="phone" name="phone">
             </div>
+						<br/>
             <div class="container">
-              <label for="prevemploy">Previous Employment:</label></br>
-							<p>Please enter (name, address, position, dates employed, contact)</p>
+              <label for="prevemploy">Previous Employer:</label>
+						<p>Please enter (name, address, position, dates employed, contact)</p>
               <textarea id="comments" rows="5"></textarea><br/>
+							<br/>
               <div class="container">
-              <label for="prevemploy">Previous Employment:</label></br>
+              <label for="prevemploy">Previous Employer:</label></br>
 							<p>Please enter (name, address, position, dates employed, contact)</p>
               <textarea id="comments" rows="5"></textarea><br/>
+							<br/>
               <div class="container">
-              <label for="prevemploy">Previous Employment:</label></br>
+              <label for="prevemploy">Previous Employer:</label></br>
 							<p>Please enter (name, address, position, dates employed, contact)</p>
               <textarea id="comments" rows="5"></textarea><br/>
+							<br/>
 						<div class="container">
-              <label for="prevemploy">Previous Employment:</label></br>
+              <label for="prevemploy">Previous Employer:</label></br>
 							<p>Please enter (name, address, position, dates employed, contact)</p>
               <textarea id="comments" rows="5"></textarea><br/>
+							<br/>
               <label for="prevemploy">Skills and/or Achievements:</label></br>
               <textarea id="comments" rows="5"></textarea><br/>
                   <button type="submit" class="submit">Submit</button>
