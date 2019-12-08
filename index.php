@@ -1,24 +1,11 @@
 <?php
 ?>
 <html>
-    <head>
-				<style> 
-             body {
-	 background-color: black;
+  <head>
+		<style> 
+   body {
+	  background-color: black;
   }
-				.font .font2 {
-  position:absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(/Users/jeffery/Desktop/UNLV/dpl_prepwork/about_me/images/oceanside.jpg) center center;
-    background-size: cover;
-    opacity: .5;
-    width: 100%;
-    height: 100%;
- }
 
 h1{
  padding: 3em;
@@ -110,7 +97,7 @@ border: 10px solid grey;
         <h1><?php echo $title; ?></h1>
         <form action="./resume.php" method="post">
             <div class="container">
-        <label for="first">First Name:</label><br/>
+        <label for="first">First Name:<?php echo ($_POST['name']); ?></label><br/>
             <input type="text" id="first" name="first">
                 <br/>
         <label for="last">Last Name:</label><br/>
@@ -132,29 +119,40 @@ border: 10px solid grey;
             <label for="phone">Contact Number:</label><br/>
             <input type="tel" id="phone" name="phone">
             </div>
+            <br/>
+            <div class="container">
+            <label for="ed">Education Level</label><br/>
+            <select name="ed" size="1">
+            <option value="high">High School Diploma/GED</option>
+            <option value="some_college">Some College</option>
+            <option value="assoc_degree">Associates Degree</option>
+            <option value="bach_degree">Bachelors Degree</option>
+            <option value="mast_degree">Masters Degree</option>
+            </select>
+            </div>
 						<br/>
             <div class="container">
-              <label for="prevemploy">Previous Employer:</label>
+              <label for="prevemploy1">Previous Employer:</label>
 						<p>Please enter (name, address, position, dates employed, contact)</p>
-              <textarea id="comments" rows="5"></textarea><br/>
+              <textarea id="comments" name="prevemploy1" rows="5"></textarea><br/>
 							<br/>
               <div class="container">
-              <label for="prevemploy">Previous Employer:</label></br>
+              <label for="prevemploy2">Previous Employer:</label></br>
 							<p>Please enter (name, address, position, dates employed, contact)</p>
-              <textarea id="comments" rows="5"></textarea><br/>
+              <textarea id="comments" name="prevemploy2" rows="5"></textarea><br/>
 							<br/>
               <div class="container">
-              <label for="prevemploy">Previous Employer:</label></br>
+              <label for="prevemploy3">Previous Employer:</label></br>
 							<p>Please enter (name, address, position, dates employed, contact)</p>
-              <textarea id="comments" rows="5"></textarea><br/>
+              <textarea id="comments" name="prevemploy3" rows="5"></textarea><br/>
 							<br/>
 						<div class="container">
-              <label for="prevemploy">Previous Employer:</label></br>
+              <label for="prevemploy4">Previous Employer:</label></br>
 							<p>Please enter (name, address, position, dates employed, contact)</p>
-              <textarea id="comments" rows="5"></textarea><br/>
+              <textarea id="comments" name="prevemploy4" rows="5"></textarea><br/>
 							<br/>
-              <label for="prevemploy">Skills and/or Achievements:</label></br>
-              <textarea id="comments" rows="5"></textarea><br/>
+              <label for="skills">Skills and/or Achievements:</label></br>
+              <textarea id="comments" name="skills" rows="5"></textarea><br/>
                   <button type="submit" class="submit">Submit</button>
               </div>
             </form>
